@@ -3,10 +3,11 @@ jobs-feed
 jobs feed slider
 
 ## install
-#### server
+#### tools
 `npm install -g json-server`
 #### dependencies
 `npm install`
+`bower install`
 
 ## run
 #### server

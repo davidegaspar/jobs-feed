@@ -1,0 +1,30 @@
+{
+  "name": "jobs-feed",
+  "version": "0.1.0",
+  "homepage": "https://github.com/davidegaspar/jobs-feed",
+  "authors": [
+    "davidegaspar <me@davidegaspar.com>"
+  ],
+  "description": "jobs feed slider",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "json",
+    "feed",
+    "slider"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gatejs": "https://github.com/davidegaspar/gatejs.git#~1.0.1",
+    "yosegi": "~0.2.5",
+    "slider": "https://github.com/davidegaspar/slider.git#~0.1.0"
+  }
+}
