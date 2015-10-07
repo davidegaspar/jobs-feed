@@ -1,0 +1,24 @@
+{
+  "name": "jobs-feed",
+  "version": "0.1.0",
+  "description": "jobs feed slider",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidegaspar/jobs-feed.git"
+  },
+  "keywords": [
+    "json",
+    "feed",
+    "slider"
+  ],
+  "author": "davidegaspar <me@davidegaspar.com> (http://davidegaspar.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidegaspar/jobs-feed/issues"
+  },
+  "homepage": "https://github.com/davidegaspar/jobs-feed#readme"
+}
