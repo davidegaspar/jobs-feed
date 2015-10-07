@@ -1,24 +1,32 @@
 window.addEventListener('load',function(){
+  //ui
+  var
+  slider = document.querySelector('.jobs .slider-box .slider'),
+  leftControl = document.querySelector('.jobs .slider-box .left.control'),
+  rightControl = document.querySelector('.jobs .slider-box .right.control'),
   //get jobs
-  get=new Gate3('http://localhost:3000/jobs');
+  get=new Gate('http://localhost:3000/jobs');
   get.ok(function(data){
     //build slider
-    new Slider(root,
-      {
-        sInterval:3000,
-        tIn:'slide_fade',
-        tOut:'slide_fade',
-        tDuration:'1000ms',
-        tFunction:'linear',
-        tCross:0,
-        iFirst:true
-      },
-      function(){},//willChange
-      function(){}//didChange
-    );
+    // var s = new Slider(slider,
+    //   {
+    //     sInterval:3000,
+    //     tIn:'slide_fade',
+    //     tOut:'slide_fade',
+    //     tDuration:'1000ms',
+    //     tFunction:'linear',
+    //     tCross:0,
+    //     iFirst:true
+    //   },
+    //   null,//willChange
+    //   null//didChange
+    // );
+    // s.play();
+    console.log(ext(data));
   });
   get.fail(function(err){
     //fallback
+    console.log(err);
   });
   get.send();
 });

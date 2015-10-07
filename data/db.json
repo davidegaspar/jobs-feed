@@ -1,64 +1,69 @@
 {
   "jobs": [
-    {
-      "jobTitle": "Senior Accountant",
-      "sector": "Accounting & Finance",
-      "link": "/jobs/1"
-    },
-    {
-      "jobTitle": "Institutional Fixed Income Sales",
-      "sector": "Private Banking / Wealth Management",
-      "link": "/jobs/2"
-    },
-    {
-      "jobTitle": "Human Resources Coordinator",
-      "sector": "HR & Recruitment",
-      "link": "/jobs/3"
-    },
-    {
-      "jobTitle": "Risk Manager, V.P.",
-      "sector": "Derivatives",
-      "link": "/jobs/4"
-    },
-    {
-      "jobTitle": "Staffing Manager",
-      "sector": "HR & Recruitment",
-      "link": "/jobs/5"
-    },
-    {
-      "jobTitle": "Senior Product Consultant (PORTIA)",
-      "sector": "Accounting & Finance",
-      "link": "/jobs/6"
-    },
-    {
-      "jobTitle": "Corporate Sales Position, Global Markets",
-      "sector": "Derivatives",
-      "link": "/jobs/7"
-    },
-    {
-      "jobTitle": "Deputy Audit Director",
-      "sector": "Accounting & Finance",
-      "link": "/jobs/8"
-    },
-    {
-      "jobTitle": "Quantitative Strategist/Interest Rates",
-      "sector": "Derivatives",
-      "link": "/jobs/9"
-    },
-    {
-      "jobTitle": "Wealth Management Supervisor",
-      "sector": "Private Banking / Wealth Management",
-      "link": "/jobs/10"
-    },
-    {
-      "jobTitle": "Banking Search and Selection Recruiters/Researchers",
-      "sector": "HR & Recruitment",
-      "link": "/jobs/11"
-    },
-    {
-      "jobTitle": "Senior Recruitment Consultant",
-      "sector": "HR & Recruitment",
-      "link": "/jobs/12"
-    }
+    [
+      "jobTitle",
+      "sector",
+      "link"
+    ],
+    [
+      "Senior Accountant",
+      "Accounting & Finance",
+      "/jobs/1"
+    ],
+    [
+      "Institutional Fixed Income Sales",
+      "Private Banking / Wealth Management",
+      "/jobs/2"
+    ],
+    [
+      "Human Resources Coordinator",
+      "HR & Recruitment",
+      "/jobs/3"
+    ],
+    [
+      "Risk Manager, V.P.",
+      "Derivatives",
+      "/jobs/4"
+    ],
+    [
+      "Staffing Manager",
+      "HR & Recruitment",
+      "/jobs/5"
+    ],
+    [
+      "Senior Product Consultant (PORTIA)",
+      "Accounting & Finance",
+      "/jobs/6"
+    ],
+    [
+      "Corporate Sales Position, Global Markets",
+      "Derivatives",
+      "/jobs/7"
+    ],
+    [
+      "Deputy Audit Director",
+      "Accounting & Finance",
+      "/jobs/8"
+    ],
+    [
+      "Quantitative Strategist/Interest Rates",
+      "Derivatives",
+      "/jobs/9"
+    ],
+    [
+      "Wealth Management Supervisor",
+      "Private Banking / Wealth Management",
+      "/jobs/10"
+    ],
+    [
+      "Banking Search and Selection Recruiters/Researchers",
+      "HR & Recruitment",
+      "/jobs/11"
+    ],
+    [
+      "Senior Recruitment Consultant",
+      "HR & Recruitment",
+      "/jobs/12"
+    ]
   ]
 }
