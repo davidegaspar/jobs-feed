@@ -25,7 +25,7 @@
   "dependencies": {
     "gatejs": "https://github.com/davidegaspar/gatejs.git#~1.0.1",
     "yosegi": "~0.2.5",
-    "slider": "https://github.com/davidegaspar/slider.git#~0.1.0",
+    "slider": "https://github.com/davidegaspar/slider.git#~1.0.1",
     "font-awesome": "fontawesome#~4.4.0",
     "templatejs": "https://github.com/davidegaspar/templatejs.git#~1.0.2"
   }
