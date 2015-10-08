@@ -20,6 +20,7 @@
   .yrel(block);
   width: 300px;
   margin: 5*@unit auto;
+  padding-bottom: @unit;
   .yradius(5px);
   background-color: fade(@primary, 10%);
   .title{
@@ -35,12 +36,12 @@
   .slider-box{
     .yrel(block);
     .yexph;
-    height: 3*@finger+2*@gap;
-    padding: @unit;
+    padding: 0;
     .slider{
-      .yabs(none);
+      .yrel(none);
       &.show{display: block;}
-      .yexp;
+      .yexph;
+      height: 3.5*@finger;
       top: 0;left: 0;
       margin: 0;
       padding: 0;
@@ -50,23 +51,33 @@
         top: 0;
         left: 0;
         margin: 0;
-        padding: 0 @finger;
+        padding: 0 @finger/2;
         >*{
           .yrel(block);
           .yexph;
-          height: @finger;
-          .ytextbox;
           text-align: center;
         }
         .job-sector{
+          .ytextbox;
+          height: @finger;
           font-size: @h3;
           color: fade(@black, 75%);
         }
         .job-title{
+          padding: 0 @finger/2;
           font-size: @h1;
           color: @black;
+          height: @finger*3/2;
+          overflow: hidden;
+          line-height: @finger*3/2;
+          >span{
+            display: inline-block;
+            line-height: 1.25em;
+            vertical-align: middle;
+          }
         }
         .job-more{
+          .ytextbox;
           height: @finger - 2*@gap;
           width: 50%;
           margin: 2*@gap auto 0 auto;

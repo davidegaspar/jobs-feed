@@ -8,7 +8,7 @@ window.addEventListener('load',function(){
   rightControl = document.querySelector('.jobs .slider-box .right.control'),
   error = document.querySelector('.jobs .slider-box .error');
   //get jobs
-  var get=new Gate('http://localhost:3000/nojobs');
+  var get=new Gate('http://localhost:3000/jobs');
   get.ok(function(data){
     var rawData=ext(data);
     // if empty
