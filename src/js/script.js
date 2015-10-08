@@ -7,7 +7,7 @@ window.addEventListener('load',function(){
   leftControl = document.querySelector('.jobs .slider-box .left.control'),
   rightControl = document.querySelector('.jobs .slider-box .right.control'),
   //get jobs
-  get=new Gate('http://localhost:3000/jobs');
+  get=new Gate('http://localhost:3000/onejob');
   get.ok(function(data){
     var rawData=ext(data);
     //template

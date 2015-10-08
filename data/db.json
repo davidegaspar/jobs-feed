@@ -65,5 +65,18 @@
       "HR & Recruitment",
       "/jobs/12"
     ]
-  ]
+  ],
+  "onejob": [
+    [
+      "jobTitle",
+      "sector",
+      "link"
+    ],
+    [
+      "Senior Accountant",
+      "Accounting & Finance",
+      "/jobs/1"
+    ]
+  ],
+  "nojobs": []
 }
