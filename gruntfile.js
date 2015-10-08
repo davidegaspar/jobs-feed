@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> - <%= pkg.version %> - <%= pkg.author %> - <%= grunt.template.today("isoDateTime") %> */\n'
       },
       js:{
-        src: ['bower_components/gatejs/Gate.js','bower_components/slider/Slider.js','src/js/ext.js','src/js/script.js'],
+        src: ['bower_components/gatejs/Gate.js','bower_components/slider/Slider.js','bower_components/templatejs/Template.js','src/js/ext.js','src/js/script.js'],
         dest: 'app/js/script.js',
       },
     },

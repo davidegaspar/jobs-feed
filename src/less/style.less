@@ -1,6 +1,8 @@
 @import "bower_components/font-awesome/less/font-awesome.less";
+@import (less) "bower_components/slider/slider.css";
 @import (reference) "bower_components/yosegi/src/y.less";
 @unit:10px;
+@gap:8px;
 @finger:44px;
 @primary:#e67e22;
 @white:#fefefe;
@@ -33,17 +35,27 @@
   .slider-box{
     .yrel(block);
     .yexph;
+    height: 3*@finger+2*@gap;
     padding: @unit;
     .slider{
-      padding: 0 @finger;
+      .yabs;
+      .yexp;
+      top: 0;left: 0;
+      margin: 0;
+      padding: 0;
       .slide{
+        .yabs;
+        .yexp;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0 @finger;
         >*{
           .yrel(block);
           .yexph;
           height: @finger;
           .ytextbox;
           text-align: center;
-
         }
         .job-sector{
           font-size: @h3;
@@ -54,9 +66,9 @@
           color: @black;
         }
         .job-more{
-          height: @finger - 2*8px;
+          height: @finger - 2*@gap;
           width: 50%;
-          margin: 2*8px auto 8px auto;
+          margin: 2*@gap auto 0 auto;
           font-size: @h3;
           .yradius(5px);
           color: @white;

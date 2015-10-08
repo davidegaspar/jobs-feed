@@ -2,6 +2,7 @@ window.addEventListener('load',function(){
   //ui
   var
   slider = document.querySelector('.jobs .slider-box .slider'),
+  slideTpl = new Template(slider),
   leftControl = document.querySelector('.jobs .slider-box .left.control'),
   rightControl = document.querySelector('.jobs .slider-box .right.control'),
   //get jobs
@@ -22,7 +23,8 @@ window.addEventListener('load',function(){
     //   null//didChange
     // );
     // s.play();
-    console.log(ext(data));
+    //console.log();
+    slideTpl.gen(ext(data));
   });
   get.fail(function(err){
     //fallback
