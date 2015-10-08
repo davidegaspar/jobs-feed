@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: 'bower_components/fontawesome/fonts/',
+            cwd: 'bower_components/font-awesome/fonts/',
             src:['**'],
             dest:'app/fonts/',
             flatten: true,
@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> - <%= pkg.version %> - <%= pkg.author %> - <%= grunt.template.today("isoDateTime") %> */\n'
       },
       js:{
-        src: ['bower_components/gatejs/Gate.js','bower_components/slider/Slider.js','src/ext.js','src/script.js'],
-        dest: 'app/script.js',
+        src: ['bower_components/gatejs/Gate.js','bower_components/slider/Slider.js','src/js/ext.js','src/js/script.js'],
+        dest: 'app/js/script.js',
       },
     },
     less:{
@@ -53,9 +53,9 @@ module.exports = function(grunt) {
       },
       src: {
         expand: true,
-        cwd: 'src/',
+        cwd: 'src/less/',
         src: '*.less',
-        dest: 'app/',
+        dest: 'app/css/',
         ext: '.css',
         flatten:true
       }
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'app/',
+          cwd: 'app/css/',
           src: ['*.css'],
           dest: 'app/',
           //ext: '.css'
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'app/',
+          cwd: 'app/js/',
           src: ['*.js'],
           dest: 'app/',
           //ext: '.js'
@@ -123,8 +123,8 @@ module.exports = function(grunt) {
   /*
     project
   */
-  grunt.registerTask('base',['clean:app','copy']);
-  grunt.registerTask('build',['concat','less']);
+  grunt.registerTask('base',['clean:app','copy:fonts']);
+  grunt.registerTask('build',['copy:html','concat','less']);
   grunt.registerTask('pack',['htmlmin:all','cssmin:all','uglify:all']);
   grunt.registerTask('default',['build']);
 

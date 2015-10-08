@@ -1,0 +1,86 @@
+@import "bower_components/font-awesome/less/font-awesome.less";
+@import (reference) "bower_components/yosegi/src/y.less";
+@unit:10px;
+@finger:44px;
+@primary:#e67e22;
+@white:#fefefe;
+@black:#333333;
+@h1:18px;
+@h2:16px;
+@h3:14px;
+@fa-small:14px;
+@fa-medium:22px;
+@fa-big:28px;
+
+.ybase(12px,'Helvetica');
+
+.jobs{
+  .yrel(block);
+  width: 300px;
+  margin: 5*@unit auto;
+  .yradius(5px);
+  background-color: fade(@primary, 10%);
+  .title{
+    .yrel(block);
+    .yexph;
+    .ylabel;
+    .yradius(5px 5px 0 0);
+    padding: @unit;
+    font-size: @h1;
+    color: @white;
+    background-color: fade(@primary, 50%);
+  }
+  .slider-box{
+    .yrel(block);
+    .yexph;
+    padding: @unit;
+    .slider{
+      padding: 0 @finger;
+      .slide{
+        >*{
+          .yrel(block);
+          .yexph;
+          height: @finger;
+          .ytextbox;
+          text-align: center;
+
+        }
+        .job-sector{
+          font-size: @h3;
+          color: fade(@black, 75%);
+        }
+        .job-title{
+          font-size: @h1;
+          color: @black;
+        }
+        .job-more{
+          height: @finger - 2*8px;
+          width: 50%;
+          margin: 2*8px auto 8px auto;
+          font-size: @h3;
+          .yradius(5px);
+          color: @white;
+          background-color: fade(@primary,75%);
+          &:hover{background-color: fade(@primary,100%);}
+        }
+      }
+    }
+    .control{
+      .yabs(none);
+      &.show{display: block;}
+      .yexpv;
+      .yiconbox;
+      text-align:center;
+      top: 0;
+      width: @finger;
+      font-size: @fa-big;
+      color: fade(@primary,75%);
+      &:hover{color: fade(@primary,100%);}
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 2;
+      &.left{left: 0;}
+      &.right{right: 0;}
+    }
+  }
+}
