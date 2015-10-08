@@ -38,7 +38,8 @@
     height: 3*@finger+2*@gap;
     padding: @unit;
     .slider{
-      .yabs;
+      .yabs(none);
+      &.show{display: block;}
       .yexp;
       top: 0;left: 0;
       margin: 0;
@@ -93,6 +94,18 @@
       z-index: 2;
       &.left{left: 0;}
       &.right{right: 0;}
+    }
+    .error{
+      .yabs(none);
+      &.show{display: block;}
+      .yexp;
+      top: 0;left: 0;
+      margin: 0;
+      padding: 0;
+      .ytextbox;
+      text-align:center;
+      font-size: @h1;
+      color: fade(@black, 75%);
     }
   }
 }
