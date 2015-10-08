@@ -126,6 +126,6 @@ module.exports = function(grunt) {
   grunt.registerTask('base',['clean:app','copy:fonts']);
   grunt.registerTask('build',['copy:html','concat','less']);
   grunt.registerTask('pack',['htmlmin:all','cssmin:all','uglify:all']);
-  grunt.registerTask('default',['build']);
+  grunt.registerTask('default',['base','build']);
 
 };
